@@ -13,6 +13,5 @@ find_package(Threads REQUIRED)
 add_executable(myApp src/main.cpp
                      src/employee.h
                      src/generators.h)
-target_link_libraries(myApp PRIVATE CONAN_PKG::libpqxx  PRIVATE Threads::Threads CONAN_PKG::boost)
+target_link_libraries(myApp PRIVATE CONAN_PKG::libpqxx)
 
-target_include_directories(myApp PRIVATE CONAN_PKG::boost)
